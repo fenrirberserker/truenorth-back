@@ -1,8 +1,13 @@
 package com.truenorth.project.model.dto;
 
-public class Square extends Operation implements Sqrt {
+
+public class Square extends Operation {
+
     @Override
-    public Object execute(Double number) {
-        return Math.sqrt(number);
+    public Object calculate(Float... nums) {
+        if(nums[0] !=null){
+            return Math.sqrt(nums[0]);
+        }
+        return 0;
     }
 }

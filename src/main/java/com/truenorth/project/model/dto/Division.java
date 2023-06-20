@@ -1,10 +1,14 @@
 package com.truenorth.project.model.dto;
 
-public class Division extends Operation implements Operate{
+
+public class Division extends Operation {
 
 
     @Override
-    public Number execute(Double first, Double second) {
-        return first/second;
+    public Object calculate(Float... nums) {
+        if(nums[0] !=null && nums[1]!=null){
+            return nums[0] / nums[1];
+        }
+        return 0;
     }
 }

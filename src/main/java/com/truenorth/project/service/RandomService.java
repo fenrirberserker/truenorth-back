@@ -27,9 +27,6 @@ public class RandomService {
                 .exchange()
                 .block();
 
-        Mono<String> r = response.bodyToMono(String.class);
-
-
-        return r.block();
+        return response.bodyToMono(String.class).block();
     }
 }

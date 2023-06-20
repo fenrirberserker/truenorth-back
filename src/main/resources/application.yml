@@ -1,0 +1,10 @@
+app:
+  config:
+    user:
+      starting-balance: 1000
+
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
